@@ -1,10 +1,10 @@
 #ifndef QCOCOAVIEWBASE_H
 #define QCOCOAVIEWBASE_H
 
-#include <QWidget>
+#include <QtWidgets>
+#include <AppKit/AppKit.h>
 
 class QCocoaBaseViewPrivate;
-class NSView;
 class QCocoaBaseView : public QWidget
 {
 public:

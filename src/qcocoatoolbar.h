@@ -6,7 +6,6 @@
 #include <QAction>
 
 class QCocoaToolBarPrivate;
-class NSString;
 class QCocoaToolBar : public QObject
 {
 public:

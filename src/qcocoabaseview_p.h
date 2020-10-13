@@ -4,7 +4,6 @@
 #ifndef QCOCOABASEVIEW_P_H
 #define QCOCOABASEVIEW_P_H
 
-class NSView;
 class QCocoaBaseViewPrivate : public QMacCocoaViewContainer
 {
 public:

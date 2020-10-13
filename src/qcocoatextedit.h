@@ -1,7 +1,7 @@
-#include <QtGui>
+#include <QtWidgets>
 #include "qcocoascrollview.h"
 
-class NSTextView;
+#include <AppKit/AppKit.h>
 class QCocoaTextEdit : public QCocoaScrollview
 {
 public:

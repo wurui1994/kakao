@@ -1,6 +1,8 @@
 #include "qcocoautil.h"
 #import <AppKit/AppKit.h>
 
+#include <QtMac>
+
 namespace QtCocoa
 {
     
@@ -59,7 +61,7 @@ NSArray *toNSArray(const QList<QString> &stringList)
 
 NSImage *toNSImage(const QPixmap &pixmap)
 {
-    NSBitmapImageRep *bitmapRep = [[NSBitmapImageRep alloc] initWithCGImage:pixmap.toMacCGImageRef()];
+    NSBitmapImageRep *bitmapRep = [[NSBitmapImageRep alloc] initWithCGImage:QtMac::toCGImageRef(pixmap)];
     NSImage *image = [[NSImage alloc] init];
     [image addRepresentation:bitmapRep];
     [bitmapRep release];

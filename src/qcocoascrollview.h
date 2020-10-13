@@ -1,11 +1,10 @@
 #ifndef QCOCOASCROLLVIEW_H
 #define QCOCOASCROLLVIEW_H
 
-#include <QtGui>
+#include <AppKit/AppKit.h>
 #include "qcocoabaseview.h"
 
 class QCocoaScrollviewPrivate;
-class NSScrollView;
 class QCocoaScrollview : public QCocoaBaseView
 {
 public:

@@ -3,7 +3,11 @@
 #import <AppKit/AppKit.h>
 #include <qdebug.h>
 
-#include <private/qt_mac_p.h> // private
+NSWindow* qt_mac_window_for(QWidget* w)
+{
+    NSView* view = (NSView*)w->winId();
+    return view.window;
+}
 
 class QCocoaToolBarPrivate;
 @interface ToolBarDelegate : NSObject <NSToolbarDelegate>

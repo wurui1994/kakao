@@ -5,7 +5,6 @@
 #ifndef QCOCOASCROLLVIEW_P_H
 #define QCOCOASCROLLVIEW_P_H
 
-class NSView;
 class QCocoaScrollviewPrivate : public QCocoaBaseViewPrivate
 {
 public:

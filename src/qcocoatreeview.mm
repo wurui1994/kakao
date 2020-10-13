@@ -61,7 +61,7 @@ void QCocoaTreeViewPrivate::addColumns()
 {
     for (int i = 0; i < modelWrapper->model->columnCount(); ++i) {
         const QString caption = modelWrapper->model->headerData(i, Qt::Horizontal).toString();
-        NSTableColumn *col = [[NSTableColumn alloc] initWithIdentifier : outlineView];
+        NSTableColumn *col = [[NSTableColumn alloc] initWithIdentifier : outlineView.identifier];
         [[col headerCell] setStringValue : QtCocoa::QCFString::toNSString(caption)];
         modelWrapper->columns[col] = i;
         [outlineView addTableColumn : col];

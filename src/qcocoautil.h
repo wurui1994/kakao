@@ -1,12 +1,10 @@
-#include <QtGui>
-#include <CoreFoundation/CoreFoundation.h>
 
 #ifndef QCOCOAUTIL_H
 #define QCOCOAUTIL_H
 
-class NSString;
-class NSArray;
-class NSImage;
+#include <QtGui>
+#include <AppKit/AppKit.h>
+
 namespace QtCocoa
 {
     template <typename T>
@@ -71,4 +69,4 @@ namespace QtCocoa
 }
 
 
-#endif QCOCOAUTIL_H
+#endif// QCOCOAUTIL_H

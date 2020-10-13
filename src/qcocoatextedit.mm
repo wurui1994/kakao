@@ -3,7 +3,7 @@
 #include "qcocoascrollview_p.h"
 #import <AppKit/AppKit.h>
 #include <QMacCocoaViewContainer>
-
+#include <QAction>
 
 class QCocoaTextEditPrivate : public QCocoaScrollviewPrivate
 {
@@ -13,7 +13,7 @@ public:
     NSTextView *theTextView;
 };
 
-QCocoaTextEditPrivate::QCocoaTextEditPrivate(QWidget *parent = 0)
+QCocoaTextEditPrivate::QCocoaTextEditPrivate(QWidget *parent)
 : QCocoaScrollviewPrivate(parent)
 {
 

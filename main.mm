@@ -4,7 +4,7 @@
 #include "qcocoatoolbar.h"
 #include "qcocoautil.h"
 #include "model.h"
-#include <QtGui>
+#include <QtWidgets>
 
 
 int main(int argc, char**argv)
